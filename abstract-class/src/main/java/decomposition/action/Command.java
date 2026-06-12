@@ -8,7 +8,7 @@ public abstract class Command {
 	}
 
 	public boolean hasTag(String s) {
-		return this.tag.equals(s);
+		return this.tag.equalsIgnoreCase(s);
 	}
 
 	public String getTag() {

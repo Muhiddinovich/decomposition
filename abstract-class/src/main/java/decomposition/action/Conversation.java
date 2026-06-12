@@ -11,13 +11,7 @@ public class Conversation {
 	}
 
 	public void run() {
-		StringJoiner commandTagsJoiner = new StringJoiner("/");
-		for (Command command : commands) {
-			commandTagsJoiner.add(command.getTag());
-		}
-
-		System.out.printf("What operation to perform (%s)", commandTagsJoiner);
-		System.out.println();
+		printGreeting();
 
 		final Scanner scanner = new Scanner(System.in);
 
@@ -29,10 +23,25 @@ public class Conversation {
 					break conversation;
 				}
 			}
-			System.out.println("Cannot recognize the command. Please, enter one of the following:");
-			for (Command command : commands) {
-				System.out.println(command.getTag());
-			}
+			printRetryMessage();
+		}
+	}
+
+	private void printGreeting() {
+		StringJoiner commandTagsJoiner = new StringJoiner("/");
+		for (Command command : commands) {
+			commandTagsJoiner.add(command.getTag());
+		}
+
+		System.out.printf("What operation to perform (%s)", commandTagsJoiner);
+		System.out.println();
+
+	}
+
+	private void printRetryMessage() {
+		System.out.println("Cannot recognize the command. Please, enter one of the following:");
+		for (Command command : commands) {
+			System.out.println(command.getTag());
 		}
 	}
 
