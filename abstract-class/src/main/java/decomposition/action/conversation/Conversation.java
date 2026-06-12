@@ -1,7 +1,9 @@
-package decomposition.action;
+package decomposition.action.conversation;
 
 import java.util.Scanner;
 import java.util.StringJoiner;
+
+import decomposition.action.conversation.command.Command;
 
 public class Conversation {
 	private final Command[] commands;

@@ -1,4 +1,6 @@
-package decomposition.action;
+package decomposition.action.conversation.command;
+
+import decomposition.action.rational.RationalNumber;
 
 public class PrintSumCommand extends Command {
 	private final RationalNumber first;

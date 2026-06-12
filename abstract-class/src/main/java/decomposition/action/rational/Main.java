@@ -1,15 +1,13 @@
-package decomposition;
+package decomposition.action.rational;
 
 import java.util.Scanner;
 
-import decomposition.action.Conversation;
-import decomposition.action.PrintProductCommand;
-import decomposition.action.PrintQuotientComman;
-import decomposition.action.PrintSumCommand;
-import decomposition.action.RationalNumber;
-import decomposition.action.RationalNumberInteractiveReader;
+import decomposition.action.conversation.Conversation;
+import decomposition.action.conversation.command.PrintProductCommand;
+import decomposition.action.conversation.command.PrintQuotientComman;
+import decomposition.action.conversation.command.PrintSumCommand;
 
-public class RationalNumbers {
+public class Main {
 	public static void main(String[] args) {
 		final Scanner scanner = new Scanner(System.in);
 

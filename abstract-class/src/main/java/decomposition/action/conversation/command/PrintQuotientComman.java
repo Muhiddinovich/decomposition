@@ -1,4 +1,6 @@
-package decomposition.action;
+package decomposition.action.conversation.command;
+
+import decomposition.action.rational.RationalNumber;
 
 public class PrintQuotientComman extends Command {
 	private RationalNumber first;

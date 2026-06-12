@@ -1,4 +1,4 @@
-package decomposition.action;
+package decomposition.action.conversation.command;
 
 public abstract class Command {
 	private final String tag;

@@ -1,4 +1,4 @@
-package decomposition.action;
+package decomposition.action.rational;
 
 public class RationalNumber {
 	private final int numerator;

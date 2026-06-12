@@ -1,4 +1,4 @@
-package decomposition.action;
+package decomposition.action.rational;
 
 import java.util.Scanner;
 
