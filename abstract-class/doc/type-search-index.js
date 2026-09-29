@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"annotations.fromCompleteRef","l":"BuiltInAnnotations"},{"p":"annotations.fromCompleteRef","l":"MarkerAnnotationDemoClass"},{"p":"annotations.fromCompleteRef","l":"SingleMemberAnnotationDemoClass"}];updateSearchResults();
