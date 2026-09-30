@@ -1,0 +1,13 @@
+package annotations.fromCompleteRef.typeUse;
+
+import static java.lang.annotation.ElementType.TYPE_PARAMETER;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+
+@Retention(RUNTIME)
+@Target(TYPE_PARAMETER)
+public @interface What {
+	String description();
+}
