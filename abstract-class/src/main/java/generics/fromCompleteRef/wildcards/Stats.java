@@ -1,4 +1,4 @@
-package generics.fromCompleteRef.bounded;
+package generics.fromCompleteRef.wildcards;
 
 public class Stats<T extends Number> {
 	T[] ob;
