@@ -1,10 +1,10 @@
 package generics.fromCompleteRef.boundedWildcards;
 
 public class Coordinates<T extends TwoD> {
-	T[] ob;
+	T[] coordinates;
 
 	public Coordinates(T[] o) {
-		this.ob = o;
+		this.coordinates = o;
 	}
 
 }
