@@ -21,6 +21,16 @@ public class ReadingFromFile {
 		} catch (IOException e) {
 			System.out.println(e);
 		}
+		System.out.println();
+		try {
+			FileReader reader = new FileReader(file);
+			int char1;
+			while ((char1 = reader.read()) != -1) {
+				System.out.print((char) char1);
+			}
+		} catch (IOException e) {
+			System.out.println(e);
+		}
 	}
 
 }
