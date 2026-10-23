@@ -7,15 +7,19 @@ import java.nio.charset.StandardCharsets;
 
 public class Demo {
 
-    public static void main(String[] args) throws IOException {
-	BufferedReader br = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
-	char c;
-	System.out.println("Enter characters, q to quit: ");
-	do {
-	    c = (char) br.read();
-	    System.out.println(c);
+    public static void main(String[] args) {
+	try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8))) {
+	    char c;
+	    System.out.println("Enter characters, q to quit: ");
+	    do {
+		c = (char) br.read();
+		System.out.println(c);
 
-	} while (c != 'q');
+	    } while (c != 'q');
+	} catch (IOException e) {
+	    // TODO Auto-generated catch block
+	    e.printStackTrace();
+	}
     }
 
 }
