@@ -11,7 +11,7 @@ public class Demo {
 	if (args.length != 1)
 	    return;
 
-	try (FileInputStream fin = new FileInputStream(args[0])) {
+	try (var fin = new FileInputStream(args[0])) {
 	    do {
 		i = fin.read();
 		System.out.print((char) i);
