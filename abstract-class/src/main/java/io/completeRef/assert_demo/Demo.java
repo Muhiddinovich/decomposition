@@ -6,9 +6,8 @@ public class Demo {
 	int i = 11;
 	try {
 	    for (int j = 0; j < 15; j++) {
-		System.out.println("Good boi");
+		System.out.println("Good boi: " + i);
 		i--;
-		System.out.println(i);
 		assert i > 0 : "Bad boi";
 	    }
 	} catch (AssertionError e) {
