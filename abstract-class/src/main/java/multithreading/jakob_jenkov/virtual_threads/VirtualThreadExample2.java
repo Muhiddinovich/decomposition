@@ -7,7 +7,7 @@ public class VirtualThreadExample2 {
 
     public static void main(String[] args) {
 	List<Thread> vThreads = new ArrayList<>();
-	int vThreadCount = 1000_000;
+	int vThreadCount = 100_000;
 	for (int i = 0; i < vThreadCount; i++) {
 	    int vThreadIndex = i;
 	    Thread vThread = Thread.ofVirtual().start(() -> {
